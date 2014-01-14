@@ -180,6 +180,10 @@ slide.fill img {
   z-index: -1;
 }
 */
+
+.fill { background-color: #FFF; }
+
+
 /**
  * Theme Styles
  */

@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Pilot Test 1',
-    subtitle: 'Evaluating Effectiveness of Data Visualization',
+    title: "Test starts in next slide",
+    subtitle: 'Will take approx 30 mins',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'
@@ -21,7 +21,7 @@ var SLIDE_CONFIG = {
   },
 
   // Author information
-  presenters: [{
+  /*presenters: [{
     name: 'Pritam Pebam',
     company: 'M.Des, IDC',
     gplus: 'http://plus.google.com/113621198205251593069',
@@ -35,6 +35,6 @@ var SLIDE_CONFIG = {
     //twitter: '@yourhandle',
     //www: 'http://www.you.com',
     //github: 'http://github.com/you'
-  }]
+  }] */
 };
 
