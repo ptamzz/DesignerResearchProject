@@ -21,7 +21,7 @@ var SLIDE_CONFIG = {
   },
 
   // Author information
-  presenters: [{
+  /* presenters: [{
     name: 'Pritam Pebam',
     company: 'M.Des, IDC',
     gplus: 'http://plus.google.com/113621198205251593069',
@@ -35,6 +35,6 @@ var SLIDE_CONFIG = {
     //twitter: '@yourhandle',
     //www: 'http://www.you.com',
     //github: 'http://github.com/you'
-  }]
+  }] */
 };
 
