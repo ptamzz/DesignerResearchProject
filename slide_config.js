@@ -2,7 +2,7 @@ var SLIDE_CONFIG = {
   // Slide settings
   settings: {
     title: "Test starts in next slide",
-    subtitle: 'Will take approx 30 mins',
+    subtitle: 'Please switch your mobile phones off',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'

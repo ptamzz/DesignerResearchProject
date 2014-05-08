@@ -39,16 +39,16 @@ URL: https://code.google.com/p/io-2012-slides
 
       function printTime(event){
         var time = curTime - timeStamp; //Calculating time
-        var page =  window.location.hash; //Slide number
+        var page =  window.location.hash.substr(1); //Slide number
 
         //console.log("Time: " + time + ", curTime: " + curTime + ", TimeStamp: " + timeStamp);
         
         if ( event.keyCode == 37 || event.keyCode == 38 ) {   //Left & up arrow
           //Previous
-          console.log("Page: " + page + " Time Taken: " + time + "secs");
+          console.log("Question: " + (page-3) + " Time Taken: " + time + "secs");
         } else if ( event.keyCode == 39 || event.keyCode == 40 ) {  //Right & Down arrow
           //Next 
-          console.log("Page: " + page + " Time Taken: " + time + "secs");
+          console.log("Question: " + (page-3) + " Time Taken: " + time + "secs");
         }
 
         timeStamp = curTime;   //Recording time wedge
@@ -65,7 +65,7 @@ URL: https://code.google.com/p/io-2012-slides
     <article class="flexbox vcenter">
       <div class="centered" style="margin-top:2em">
         <h2>Welcome</h2>
-        <!-- <h4 class="subtitle">The test will take approx 30 mins.</h4> -->
+        <h4 class="subtitle">The test will take approx 15 mins.</h4>
       </div>
     </article>
   </slide>
@@ -81,267 +81,257 @@ URL: https://code.google.com/p/io-2012-slides
   </slide>
 
   <!-- Scale Graph 1 | Without Base-->
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-01.png)">
+
+        <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-01.png)" data-graph="01">
+          <hgroup>
+            <h3>1: What is the average wind speed of the city?</h3>
+          </hgroup>
+        </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-08.png)" data-graph="08">
     <hgroup>
-      <h3>1: What is the minimum wind speed of the city?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-01.png)">
-    <hgroup>
-      <h3>2: What is the average wind speed of the city?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-01.png)">
-    <hgroup>
-      <h3>3: From 1 to 10, rate how windy is the city? 1 being the lowest, 10 being the highest.
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-01.png)">
-    <hgroup>
-      <h3>4: Based on the wind speed, would you prefer to live on this city? Yes or No.</h3>
-    </hgroup>
-  </slide>
-
-
-  <!-- Scale Graph 2 | With Base -->
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-02.png)">
-    <hgroup>
-     <h3>5: What is the minimum wind speed of the city?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-02.png)">
-    <hgroup>
-      <h3>6: What is the average wind speed of the city?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-02.png)">
-    <hgroup>
-      <h3>7: From 1 to 10, rate how windy is the city? 1 being the lowest, 10 being the highest.</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-02.png)">
-    <hgroup>
-      <h3>8: Based on the wind speed, would you prefer to live on this city? Yes or No.</h3>
-    </hgroup>
-  </slide>
-
-  
-
-<!-- Symbol Graph 1 | Without Symbol -->
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-03.png)">
-    <hgroup>
-      <h3>9: How many homicides happened in total?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-03.png)">
-    <hgroup>
-      <h3>10: What is the most common 'cause-of-death'?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-03.png)">
-    <hgroup>
-      <h3>11: How many types of cause-of-death are there?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-03.png)">
-    <hgroup>
-      <h3>12: Which cause-of-death killed the maximum number of people in just one incident?</h3>
-    </hgroup>
-  </slide>
-
-
-
-  <!-- Symbol Graph 2 | With Symbol -->
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-04.png); ">
-    <hgroup>
-      <h3>13: How many homicides happened in total?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-04.png)">
-    <hgroup>
-      <h3>14: What is the most common 'cause-of-death'?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-04.png)">
-    <hgroup>
-      <h3>15: How many types of cause-of-death are there?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-04.png)">
-    <hgroup>
-      <h3>16: Which cause-of-death killed the maximum number of people in just one incident?</h3>
-    </hgroup>
-  </slide>
-
-
-
-  <!-- Optimal Number Graphs | Less Packed 1 -->
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-07.png)">
-    <hgroup>
-      <h3>17: How many elements are there?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-10.png)">
-    <hgroup>
-      <h3>18: How many elements are there?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-06.png)">
-    <hgroup>
-      <h3>19: How many elements are there?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-09.png)">
-    <hgroup>
-      <h3>20: How many elements are there?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-05.png)">
-    <hgroup>
-      <h3>21: How many elements are there?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-08.png)">
-    <hgroup>
-      <h3>22: How many elements are there?</h3>
-    </hgroup>
-  </slide>
-
-
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-07.png)">
-    <hgroup>
-      <h3>23: What is the rough average weekly earning?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-05.png)">
-    <hgroup>
-      <h3>24: What is the rough average weekly earning?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-08.png)">
-    <hgroup>
-      <h3>25: What is the rough average weekly earning?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-10.png)">
-    <hgroup>
-      <h3>26: What is the rough average weekly earning?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-09.png)">
-    <hgroup>
-      <h3>27: What is the rough average weekly earning?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-06.png)">
-    <hgroup>
-      <h3>28: What is the rough average weekly earning?</h3>
+      <h3>2: How many elements (x) are there?</h3>
     </hgroup>
   </slide>
   
-  
+  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-09.png)" data-graph="09">
+      <hgroup>
+        <h3>3: What is the rough average weekly earning?</h3>
+      </hgroup>
+    </slide>
 
-  
-
-  
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-06.png)">
-    <hgroup>
-      <h3>29: How many times did the cab driver earned between 200 to 240?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-09.png)">
-    <hgroup>
-      <h3>30: How many times did the cab driver earned between 200 to 240?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-05.png)">
-    <hgroup>
-      <h3>31: How many times did the cab driver earned between 200 to 240?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-10.png)">
-    <hgroup>
-      <h3>32: How many times did the cab driver earned between 200 to 240?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-08.png)">
-    <hgroup>
-      <h3>33: How many times did the cab driver earned between 200 to 240?</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-07.png)">
-    <hgroup>
-      <h3>34: How many times did the cab driver earned between 200 to 240?</h3>
-    </hgroup>
-  </slide>
+        <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-02.png)" data-graph="02">
+          <hgroup>
+            <h3>4: From 1 to 10, rate how windy is the city? 
+                <br/> &nbsp;&nbsp;&nbsp;&nbsp; 1 being the lowest, 10 being the highest.</h3>
+          </hgroup>
+        </slide>
 
 
-  
-  
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-07.png)">
-    <hgroup>
-      <h3>35: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
-    </hgroup>
-  </slide>
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-06.png)" data-graph="06">
+      <hgroup>
+        <h3>5: How many times did the cab driver earned between 200 to 240?</h3>
+      </hgroup>
+    </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-10.png)">
-    <hgroup>
-      <h3>36: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
-    </hgroup>
-  </slide>
+      <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-08.png)" data-graph="08">
+        <hgroup>
+          <h3>6: What is the rough average weekly earning?</h3>
+        </hgroup>
+      </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-06.png)">
-    <hgroup>
-      <h3>37: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
-    </hgroup>
-  </slide>
+      <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-01.png)" data-graph="01">
+        <hgroup>
+          <h3>7: From 1 to 10, rate how windy is the city? 
+            <br/> &nbsp;&nbsp;&nbsp;&nbsp; 1 being the lowest, 10 being the highest.</h3>
+        </hgroup>
+      </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-09.png)">
-    <hgroup>
-      <h3>38: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
-    </hgroup>
-  </slide>
+        <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-07.png)" data-graph="07">
+          <hgroup>
+            <h3>8: How many elements (x) are there?</h3>
+          </hgroup>
+        </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-05.png)">
-    <hgroup>
-      <h3>39: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
-    </hgroup>
-  </slide>
+          <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-01.png)" data-graph="01">
+            <hgroup>
+              <h3>9: What is the minimum wind speed of the city?</h3>
+            </hgroup>
+          </slide>
 
-  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-08.png)">
-    <hgroup>
-      <h3>40: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
-    </hgroup>
-  </slide>
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-09.png)"  data-graph="09">
+      <hgroup>
+        <h3>10: How many times did the cab driver earned between 200 to 240?</h3>
+      </hgroup>
+    </slide>
+
+              <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-04.png)" data-graph="04">
+                <hgroup>
+                  <h3>11: How many types of cause-of-death are there?</h3>
+                </hgroup>
+              </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-05.png)" data-graph="05">
+      <hgroup>
+        <h3>12: How many times did the cab driver earned between 200 to 240?</h3>
+      </hgroup>
+    </slide>
+
+          <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-10.png)" data-graph="10">
+            <hgroup>
+              <h3>13: What is the rough average weekly earning?</h3>
+            </hgroup>
+          </slide>
+
+                <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-04.png)" data-graph="04">
+                  <hgroup>
+                    <h3>14: What is the most common 'cause-of-death'?</h3>
+                  </hgroup>
+                </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-10.png)" data-graph="10">
+      <hgroup>
+        <h3>15: How many times did the cab driver earned between 200 to 240?</h3>
+      </hgroup>
+    </slide>
+
+        <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-05.png)" data-graph="05">
+          <hgroup>
+            <h3>16: What is the rough average weekly earning?</h3>
+          </hgroup>
+        </slide>
+
+          <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-03.png)" data-graph="03">
+            <hgroup>
+              <h3>17: What is the most common 'cause-of-death'?</h3>
+            </hgroup>
+          </slide>
+
+
+          <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-08.png)" data-graph="08">
+            <hgroup>
+              <h3>18: How many times did the cab driver earned between 200 to 240?</h3>
+            </hgroup>
+          </slide>
+
+                  <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-03.png)" data-graph="03">
+                    <hgroup>
+                      <h3>19: How many types of cause-of-death are there?</h3>
+                    </hgroup>
+                  </slide>
+
+
+        <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-02.png)" data-graph="02">
+          <hgroup>
+            <h3>20: What is the average wind speed of the city?</h3>
+          </hgroup>
+        </slide> 
+
+          <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-05.png)" data-graph="05">
+            <hgroup>
+              <h3>21: How many elements (x) are there?</h3>
+            </hgroup>
+          </slide>
+
+              <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-02.png)" data-graph="02">
+                <hgroup>
+                  <h3>22: Based on the wind speed, would you prefer to live on this city? 
+                    <br/> &nbsp;&nbsp;&nbsp;&nbsp; Yes or No or Can't Say</h3>
+                </hgroup>
+              </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-07.png)" data-graph="07">
+      <hgroup>
+        <h3>23: How many times did the cab driver earned between 200 to 240?</h3>
+      </hgroup>
+    </slide>
+
+
+      <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-06.png)" data-graph="06">
+        <hgroup>
+          <h3>24: How many elements (x) are there?</h3>
+        </hgroup>
+      </slide>
+    
+    
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-07.png)" data-graph="07">
+      <hgroup>
+        <h3>25: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
+      </hgroup>
+    </slide>
+
+      <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-01.png)" data-graph="01">
+        <hgroup>
+          <h3>26: Based on the wind speed, would you prefer to live on this city? 
+            <br/> &nbsp;&nbsp;&nbsp;&nbsp; Yes or No or Can't Say</h3>
+        </hgroup>
+      </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-10.png)" data-graph="10">
+      <hgroup>
+        <h3>27: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
+      </hgroup>
+    </slide>
+
+                <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-04.png)" data-graph="04">
+                  <hgroup>
+                    <h3>28: Which cause-of-death killed the maximum number of people in just one incident?</h3>
+                  </hgroup>
+                </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-06.png)" data-graph="06">
+      <hgroup>
+        <h3>29: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
+      </hgroup>
+    </slide>
+
+            <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-09.png)" data-graph="09">
+              <hgroup>
+                <h3>30: How many elements (x) are there?</h3>
+              </hgroup>
+            </slide>
+
+                    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-03.png)" data-graph="03">
+                      <hgroup>
+                        <h3>31: Which cause-of-death killed the maximum number of people in just one incident?</h3>
+                      </hgroup>
+                    </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-09.png)" data-graph="09">
+      <hgroup>
+        <h3>32: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
+      </hgroup>
+    </slide>
+
+          <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-03.png)" data-graph="03">
+            <hgroup>
+              <h3>33: How many times did homicides happen?</h3>
+            </hgroup>
+          </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-05.png)" data-graph="05">
+      <hgroup>
+        <h3>34: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
+      </hgroup>
+    </slide>
+
+        <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-02.png)" data-graph="02">
+          <hgroup>
+           <h3>35: What is the minimum wind speed of the city?</h3>
+          </hgroup>
+        </slide>
+
+          <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-10.png)" data-graph="10">
+            <hgroup>
+              <h3>36: How many elements (x) are there?</h3>
+            </hgroup>
+          </slide>
+
+                      <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-04.png);" data-graph="04">
+                        <hgroup>
+                          <h3>37: How many times did homicides happen?</h3>
+                        </hgroup>
+                      </slide>
+
+            <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-06.png)" data-graph="06">
+              <hgroup>
+                <h3>38: What is the rough average weekly earning?</h3>
+              </hgroup>
+            </slide>
+
+    <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-08.png)" data-graph="08">
+      <hgroup>
+        <h3>39: In a scale of 1 to 10, rate how likely will a driver earn more than $300 in a week?</h3>
+      </hgroup>
+    </slide>
+
+      <slide class="fill nobackground" style="background-image: url(images/viz/wind-speed-07.png)" data-graph="07">
+        <hgroup>
+          <h3>40: What is the rough average weekly earning?</h3>
+        </hgroup>
+      </slide>
+
+
 
 <!-- Ends -->
   <slide class="thank-you-slide segue nobackground">
